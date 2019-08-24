@@ -9,7 +9,7 @@ int slotsUtilizados = 0;
 const int numMaxSlots = 5;
 
 void *producer(void *arg) {
-	int i;
+	int i;c
 	for (i = 0; i < 10; i++) {
 		while(slotsUtilizados == numMaxSlots){
 			printf("Produtor -- o buffer está cheio! A produção está em espera!\n");
